@@ -1,0 +1,31 @@
+{% extends 'mychat/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+
+  <!-- Room Name section -->
+  <section id="room-name-wrapper">
+    <p>Room Name: <span id="room-name"></span></p>
+  </section>
+
+  <!-- Video streams section -->
+  <div id="video-streams">
+
+    <!-- <div class="video-container" id="user-container-1">
+      <div class="video-player" id="user-1">
+        <div class="username-wrapper"><span class="user-name">My Name</span></div>
+
+      </div>
+    </div> -->
+
+  </div>
+
+</main>
+
+<script type="text/javascript" src="{% static 'js/AgoraRTC_N-4.8.1.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/streams.js' %}"></script>
+
+
+{% endblock %}
