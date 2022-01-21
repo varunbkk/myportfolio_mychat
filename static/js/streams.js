@@ -1,4 +1,4 @@
-const APP_ID = '44c5646be93547cb8087376f1bed0a70'
+const APP_ID = 'YOUR APP ID'
 
 // Retrieves the channel,token, UID and user information from the sessionStorage
 const CHANNEL = sessionStorage.getItem('room');
