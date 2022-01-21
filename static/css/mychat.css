@@ -74,7 +74,7 @@ body
   top:10px;
   left: 10px;
   z-index: 9999;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,1);
   padding: 5px;
   color: #fff;
 }
