@@ -1,11 +1,12 @@
 :root
 {
-  --shaddow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
 }
 
 body
 {
   background-color: rgba(232,233,239,1);
+  font-family: 'Roboto', sans-serif;
 }
 
 #logo
@@ -20,7 +21,7 @@ body
 {
   width: 400px;
   box-shadow: var(--shadow);
-  background-color: #fff;
+  background-color: rgba(205, 209, 228,1);
   padding: 30px;
   position: fixed;
   top:50%;
@@ -29,8 +30,13 @@ body
   border-radius: 5px;
 }
 
-/* ROOM STYLING */
+/* Room styling */
 
+#room-name-wrapper
+{
+  text-align: center;
+  font-size: 18px;
+}
 #video-streams
 {
   display: flex;
@@ -60,4 +66,95 @@ body
 
 .video-player > * {
     border-radius: 5px;
+}
+
+.username-wrapper
+{
+  position: absolute;
+  top:10px;
+  left: 10px;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.2);
+  padding: 5px;
+  color: #fff;
+}
+
+@media screen and (max-width:1650px)
+{
+  .video-container
+  {
+    flex-basis: 300px;
+    min-height: 200px;
+  }
+}
+/* Control button styling */
+
+.control-icon
+{
+  height:40px;
+  width: 40px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  background-color: #fff;
+  padding:10px;
+  border-radius: 5px;
+}
+
+#leave-btn
+{
+  background-color: #fff;
+}
+
+#video-btn
+{
+  background-color: rgb(144, 238, 144, 1);
+}
+
+#mic-btn
+{
+  background-color: rgb(100, 149, 237, 1);
+}
+
+#controls-wrapper
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 0.5em;
+  bottom: 20px;
+  position: absolute;
+}
+
+/* Lobby styling */
+
+.form-field
+{
+  margin: 20px;
+}
+
+.form-field label
+{
+  font-size: 15px;
+  line-height: 1.7em;
+}
+
+.form-field input
+{
+  width: 100%;
+}
+
+#welcome-message
+{
+  text-align: center;
+  margin: 20px;
+}
+
+#welcome-message h1
+{
+  font-size: 30px;
+}
+
+#welcome-message p
+{
+  font-size: 15px;
 }
