@@ -7,7 +7,7 @@ import random
 import time
 import json
 from .models import RoomMember
-load_dotenv()
+
 
 # Create your views here.
 
@@ -21,8 +21,8 @@ def room(request):
 
 # Generates a token each time a user creates or joins a room
 def getToken(request):
-    appId = str(os.getenv('appId'))
-    appCertificate = str(os.getenv('appCertificate'))
+    appId = 'YOUR APP ID'
+    appCertificate = 'YOUR APP CERTIFICATE'
     channelName = request.GET.get('channel')
     # Generating a random user ID between 1 and 232
     uid = random.randint(1,230)
