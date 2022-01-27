@@ -2,12 +2,12 @@
 
 MyChat is a WebRTC-based video-chat application built with the Agora SDK
 
-## Directions
+### Setup Instructions
 
 1. Sign up for an Agora account [here][agorasignup]
-2. Replace the ```yml appId ``` and ```yml APP_ID ``` with your actual App ID (in views.py and streams.js respectively)
-3. Replace ```yml appCertificate``` with your actual App Certificate, also in views.py
-4. Run ```yml pip install -r requirements.txt ```
+2. Replace the ```appId``` and ```APP_ID``` values with your actual App ID (in views.py and streams.js respectively)
+3. Replace the ```appCertificate``` value with your actual App Certificate, also in views.py
+4. Run ```pip install -r requirements.txt ```
 
 
 
